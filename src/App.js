@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
+import Ticket from './components/Ticket';
+import TabBar from './components/TabBar';
 import { getTickets } from './api';
 
 function App() {
@@ -14,7 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <TabBar />
+      <Ticket />
     </div>
   );
 }

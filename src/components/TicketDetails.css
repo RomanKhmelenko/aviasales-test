@@ -1,0 +1,19 @@
+.first-row {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0B0B9;
+}
+
+.second-row {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #4A4A4A;
+}
