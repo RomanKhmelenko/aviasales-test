@@ -3,6 +3,8 @@
     display: flex;
     padding: 10px 20px;
     cursor: url("../images/pointer-cursor.svg"), pointer;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .checkbox:hover {
