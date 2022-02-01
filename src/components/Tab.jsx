@@ -1,9 +1,10 @@
-import './Tab.css';
+import '../assets/styles/Tab.css';
 
-const Tab = () => {
+const Tab = ({textContent}) => {
+
     return (
         <div className="tab">
-            самый дешевый
+            {textContent}
         </div>
     )
 }

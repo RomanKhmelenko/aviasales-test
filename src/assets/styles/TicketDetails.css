@@ -1,5 +1,4 @@
 .first-row {
-    font-weight: 600;
     font-size: 12px;
     line-height: 18px;
     display: flex;
@@ -10,7 +9,6 @@
 }
 
 .second-row {
-    font-weight: 600;
     font-size: 14px;
     line-height: 21px;
     display: flex;

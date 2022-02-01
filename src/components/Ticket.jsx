@@ -1,4 +1,5 @@
-import './Ticket.css';
+import '../assets/styles/Ticket.css';
+import logo from '../assets/images/s7-logo.svg';
 
 import TicketDetails from './TicketDetails'
 
@@ -7,7 +8,7 @@ const Ticket = () => {
         <div className="ticket">
             <div className="ticket-header">
                 <span className="ticket-price">13400 P</span>
-                <span className="aircompany">S7 Airlines</span> 
+                <img src={logo} alt="S7 Logo" />
             </div>
             <div className="ticket-details-row">
                 <TicketDetails />

@@ -1,0 +1,13 @@
+/* .header{
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+} */
+
+.header{
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

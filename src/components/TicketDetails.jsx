@@ -1,4 +1,4 @@
-import './TicketDetails.css';
+import '../assets/styles/TicketDetails.css';
 
 const TicketDetails = () => {
     return (

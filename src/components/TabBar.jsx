@@ -1,12 +1,12 @@
-import './TabBar.css';
+import '../assets/styles/TabBar.css';
 import Tab from './Tab';
 
 const TabBar = () => {
     return (
         <div className="tabBar">
-            <Tab />
-            <Tab />
-            <Tab />
+            <Tab textContent={"самый дешевый"}/>
+            <Tab textContent={"самый быстрый"}/>
+            <Tab textContent={"оптимальный"}/>
         </div>
     )
 }
