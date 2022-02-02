@@ -11,3 +11,7 @@
     align-items: center;
     justify-content: center;
 }
+
+.logo{
+    cursor: url("../images/pointer-cursor.svg"), pointer;
+}
