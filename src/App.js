@@ -1,5 +1,6 @@
 import './assets/styles/App.css';
 
+import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getTickets } from './api';
 
@@ -15,6 +16,10 @@ function App() {
 
     getTicketsFetcher();
   }, []);
+
+  const state = useSelector((state) => state);
+
+  console.log(state);
 
   return (
     <div className="App">
