@@ -6,7 +6,7 @@
     padding: 20px;
     margin-bottom: 20px;
 
-    cursor: url("../images/pointer-cursor.svg"), pointer;
+    /* cursor: url("../images/pointer-cursor.svg"), pointer; */
 }
 
 .ticket-header {
