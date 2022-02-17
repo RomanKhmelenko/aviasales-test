@@ -3,11 +3,13 @@ import logo from '../assets/images/s7-logo.svg';
 
 import TicketDetails from './TicketDetails'
 
-const Ticket = () => {
+const Ticket = (ticket) => {
+    console.log(ticket);
+    
     return (
         <div className="ticket">
             <div className="ticket-header">
-                <span className="ticket-price">13400 P</span>
+                <span className="ticket-price">{ticket.price}</span>
                 <img src={logo} alt="S7 Logo" />
             </div>
             <div className="ticket-details-row">
