@@ -1,9 +1,9 @@
 import "../assets/styles/Main.css";
+import Tickets from "../Tickets";
 
 import Filter from "./Filter";
 import ShowMoreBtn from "./ShowMoreBtn";
 import TabBar from "./TabBar";
-import Ticket from "./Ticket";
 
 const Main = () => {
     return (
@@ -13,7 +13,7 @@ const Main = () => {
             </div>        
             <div className="main">
                 <TabBar />
-                <Ticket />
+                <Tickets />
                 <ShowMoreBtn />
             </div>
         </div>

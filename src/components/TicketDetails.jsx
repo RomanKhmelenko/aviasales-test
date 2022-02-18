@@ -1,10 +1,10 @@
 import '../assets/styles/TicketDetails.css';
 
-const TicketDetails = () => {
+const TicketDetails = ({firstRow,secondRow}) => {
     return (
         <div>
-            <div className="first-row">mow - hkt</div>
-            <div className="second-row">10:45 - 11:20</div>
+            <div className="first-row">{firstRow}</div>
+            <div className="second-row">{secondRow}</div>
         </div>
     )
 }

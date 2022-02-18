@@ -1,20 +1,21 @@
 import './assets/styles/App.css';
 
+import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getTickets } from './api';
 
 import Main from './components/Main';
 import Header from './components/Header';
 
-function App() {
-  useEffect(() => {
-    const getTicketsFetcher = async () => {
-      const tickets = await getTickets();
-      console.log(tickets);
-    };
+import { fetchTickets } from './redux/actions';
+import Tickets from './Tickets';
 
-    getTicketsFetcher();
-  }, []);
+function App() {
+  const dispatch = useDispatch()
+  const state = useSelector((state) => state.tickets);
+
+  useEffect(() => {
+    dispatch(fetchTickets())
+  }, [dispatch]);
 
   return (
     <div className="App">
