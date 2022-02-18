@@ -21,7 +21,6 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <Tickets />
     </div>
   );
 }
