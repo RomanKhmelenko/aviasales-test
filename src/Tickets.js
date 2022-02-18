@@ -6,7 +6,6 @@ import { fetchTickets } from "./redux/actions";
 const Tickets = () => {
     const dispatch = useDispatch()
     const tickets = useSelector((state) => state.tickets);
-    console.log(tickets);
 
     useEffect(() => {
 
