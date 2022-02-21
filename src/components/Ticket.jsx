@@ -2,6 +2,7 @@ import '../assets/styles/Ticket.css';
 import logo from '../assets/images/s7-logo.svg';
 
 import TicketDetails from './TicketDetails'
+import moment from 'moment';
 
 const Ticket = (ticketObj) => {
 
@@ -16,18 +17,22 @@ const Ticket = (ticketObj) => {
 
     const flightDepArrTimes = departureTime + " - " + arrivalTime;
     
-    // IN THE AIR
+    // FLIGHT DURATION
 
     const inTheAir = "в пути";
 
-    const departureDate = ticket.departure_date;
-    const arrivalDate = ticket.arrival_date;
+    const departureDateTime = `${ticket.departure_date} ${ticket.departure_time}`;
+    const arrivalDateTime = `${ticket.arrival_date} ${ticket.arrival_time}`;
 
-    console.log(departureTime);
+    const departure = moment(departureDateTime, "DD.MM.YY HH:mm");
+    const arrival = moment(arrivalDateTime, "DD.MM.YY HH:mm");
 
-    // const testDate = Date.parse(departureTime);
-
-    // console.log(testDate);
+    const duration = moment.duration(arrival.diff(departure));
+    
+    const hours = duration.get('hours');
+    const minutes = duration.get('minutes');
+    
+    const flightDuration = `${hours}ч ${minutes}м`
     
     // STOPS 
 
@@ -43,24 +48,21 @@ const Ticket = (ticketObj) => {
 
     const stops = stopsFunc(ticket.stops)
 
-    // FILLER FOR STOPS AIRPORTS >>> START <<<
+    // FILLER FOR STOPS AIRPORTS
 
     const stopsPortFunc = (arg) => {
         if (arg === 0) {
-            return ("n/a");
+            return ("N/A");
         } else if (arg === 1) {
-            return ("abc");
+            return ("ABC");
         } else if (arg === 2) {
-            return ("def, ghj");
+            return ("DEF, GHJ");
         } else {
-            return ("klm, nop, qrs")
+            return ("KLM, NOP, QRS")
         }
     };
 
     const stopsPort = stopsPortFunc(ticket.stops);
-
-    // FILLER FOR STOPS AIRPORTS >>> END <<<
-
 
     return (
         <div className="ticket">
@@ -70,12 +72,12 @@ const Ticket = (ticketObj) => {
             </div>
             <div className="ticket-details-row">
                 <TicketDetails firstRow={flight} secondRow={flightDepArrTimes}/>
-                <TicketDetails firstRow={inTheAir} secondRow={flightDepArrTimes}/>
+                <TicketDetails firstRow={inTheAir} secondRow={flightDuration}/>
                 <TicketDetails firstRow={stops} secondRow={stopsPort}/>
             </div>
             <div className="ticket-details-row">
                 <TicketDetails firstRow={flight} secondRow={flightDepArrTimes}/>
-                <TicketDetails firstRow={inTheAir} secondRow={flightDepArrTimes}/>
+                <TicketDetails firstRow={inTheAir} secondRow={flightDuration}/>
                 <TicketDetails firstRow={stops} secondRow={stopsPort}/>
             </div>
         </div>

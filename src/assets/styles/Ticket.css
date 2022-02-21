@@ -17,16 +17,18 @@
     margin-bottom: 20px;
 }
 
-.ticket-details-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
 .ticket-price {
     font-size: 24px;
     line-height: 24px;
     color: #2196F3;
 }
+
+.ticket-details-row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+}
+
+
 
