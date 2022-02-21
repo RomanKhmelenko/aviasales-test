@@ -1,5 +1,5 @@
 import "../assets/styles/Main.css";
-import Tickets from "../Tickets";
+import Tickets from "./Tickets/Tickets";
 
 import Filter from "./Filter";
 import ShowMoreBtn from "./ShowMoreBtn";

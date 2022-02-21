@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import Ticket from "./components/Ticket";
-import { fetchTickets } from "./redux/actions";
+import Ticket from "./Ticket";
+import { fetchTickets } from "../../redux/actions";
 
 const Tickets = () => {
     const dispatch = useDispatch()

@@ -1,4 +1,4 @@
-import '../assets/styles/TicketDetails.css';
+import '../../assets/styles/TicketDetails.css';
 
 const TicketDetails = ({firstRow,secondRow}) => {
     return (
