@@ -1,9 +1,9 @@
 import '../../assets/styles/Ticket.css';
 import logo from '../../assets/images/s7-logo.svg';
 
-import TicketRoute from './TicketRoute';
-import TicketFlightDuration from './TIcketFlightDuration';
-import TicketStops from './TicketStops';
+import FlightDuration from './FlightDuration';
+import FlightStops from './FlightStops';
+import FlightRoute from './FlightRoute';
 
 const Ticket = ({ticket}) => {
 
@@ -14,14 +14,14 @@ const Ticket = ({ticket}) => {
                 <img src={logo} alt="S7 Logo" />
             </div>
             <div className="ticket-details-row">
-                <TicketRoute ticket={ticket} />
-                <TicketFlightDuration ticket={ticket} />
-                <TicketStops ticket={ticket} />
+                <FlightRoute ticket={ticket} />
+                <FlightDuration ticket={ticket} />
+                <FlightStops ticket={ticket} />
             </div>
             <div className="ticket-details-row">
-                <TicketRoute ticket={ticket} />
-                <TicketFlightDuration ticket={ticket} />
-                <TicketStops ticket={ticket} />
+                <FlightRoute ticket={ticket} />
+                <FlightDuration ticket={ticket} />
+                <FlightStops ticket={ticket} />
             </div>
         </div>
     )

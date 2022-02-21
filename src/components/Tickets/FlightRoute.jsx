@@ -1,6 +1,6 @@
 import TicketDetails from "./TicketDetails"
 
-const TicketRoute = ({ticket}) => {
+const FlightRoute = ({ticket}) => {
     
     const flight = `${ticket.origin} - ${ticket.destination}`;
 
@@ -15,4 +15,4 @@ const TicketRoute = ({ticket}) => {
     )
 }
 
-export default TicketRoute;
+export default FlightRoute;

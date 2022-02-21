@@ -2,7 +2,7 @@ import TicketDetails from "./TicketDetails"
 
 import moment from "moment";
 
-const TicketFlightDuration = ({ticket}) => {
+const FlightDuration = ({ticket}) => {
     
     const title = "в пути";
 
@@ -24,4 +24,4 @@ const TicketFlightDuration = ({ticket}) => {
     )
 }
 
-export default TicketFlightDuration;
+export default FlightDuration;

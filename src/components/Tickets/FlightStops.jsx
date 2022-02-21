@@ -1,6 +1,6 @@
 import TicketDetails from "./TicketDetails"
 
-const TicketStops = ({ticket}) => {
+const FlightStops = ({ticket}) => {
     
     const stopsFunc = (arg) => {
         if (arg === 0) {
@@ -36,4 +36,4 @@ const TicketStops = ({ticket}) => {
     )
 }
 
-export default TicketStops;
+export default FlightStops;
