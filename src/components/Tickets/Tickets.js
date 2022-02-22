@@ -8,20 +8,20 @@ const Tickets = () => {
     const tickets = useSelector((state) => state.tickets);
 
     useEffect(() => {
-
         dispatch(fetchTickets())
-
       }, [dispatch]);
-
+    
     return (
         <div>
             <div>
-                {tickets.map(ticket => 
-                    <Ticket ticket={ticket} key={ticket.price} />
-                )}
+                {tickets.map((ticket, index) => {
+                    if (index <= 4) {
+                        return <Ticket ticket={ticket} key={ticket.price} />
+                    }
+                })}
             </div>
         </div>
-    )   
+    )
 }
 
 export default Tickets;

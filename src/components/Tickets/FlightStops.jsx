@@ -4,11 +4,11 @@ const FlightStops = ({ticket}) => {
     
     const stopsFunc = (arg) => {
         if (arg === 0) {
-            return ("без пересадок");
+            return "без пересадок";
         } else if (arg === 1) {
-            return (`${arg} пересадка`);
+            return `${arg} пересадка`;
         } else {
-            return (`${arg} пересадки`);
+            return `${arg} пересадки`;
         }
     };
 
@@ -29,7 +29,6 @@ const FlightStops = ({ticket}) => {
     };
 
     const stopsPort = stopsPortFunc(ticket.stops);
-
 
     return (
         <TicketDetails firstRow={stops} secondRow={stopsPort} />

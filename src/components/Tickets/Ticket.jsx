@@ -6,7 +6,7 @@ import FlightStops from './FlightStops';
 import FlightRoute from './FlightRoute';
 
 const Ticket = ({ticket}) => {
-
+    
     return (
         <div className="ticket">
             <div className="ticket-header">
