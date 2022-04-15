@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import Ticket from "./Ticket";
 import { fetchTickets } from "../../redux/actions";
 
-const Tickets = () => {
+const Tickets = ({ticketsQuantity}) => {
+
     const dispatch = useDispatch()
     const allTickets = useSelector((state) => state.tickets);
 
@@ -11,13 +12,7 @@ const Tickets = () => {
         dispatch(fetchTickets())
       }, [dispatch]);
     
-    const [ticketsQuantity, setTicketsQuantity] = useState(2)
-
     const ticketsToShow = allTickets.slice(0, ticketsQuantity);
-
-    console.log(allTickets);
-    
-    console.log(ticketsToShow);
 
     return (
         <div>

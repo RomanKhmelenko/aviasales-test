@@ -1,8 +1,9 @@
 import "../assets/styles/ShowMoreBtn.css";
 
-const ShowMoreBtn = () => {
+const ShowMoreBtn = (showMore) => {
+
     return (
-        <div className="show-more-btn">
+        <div className="show-more-btn" onClick={showMore.showMore}>
             показать еще 5 билетов!
         </div>
     )
