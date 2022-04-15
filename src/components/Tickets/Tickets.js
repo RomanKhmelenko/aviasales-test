@@ -16,6 +16,7 @@ const Tickets = () => {
     const ticketsToShow = allTickets.slice(0, ticketsQuantity);
 
     console.log(allTickets);
+    
     console.log(ticketsToShow);
 
     return (
